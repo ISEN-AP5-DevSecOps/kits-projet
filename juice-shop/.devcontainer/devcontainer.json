@@ -1,0 +1,5 @@
+{
+  "name": "OWASP Juice Shop (projet DevSecOps AP5)",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [3000]
+}
