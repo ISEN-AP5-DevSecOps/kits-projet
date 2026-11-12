@@ -19,7 +19,7 @@ puis recréez le Codespace (Codespaces: Rebuild Container).
 ## Lancer l'application dans le Codespace
 
 ```bash
-./mvnw -B -q clean install -DskipTests && docker build -t app . && docker run -d -p 8080:8080 app
+chmod +x mvnw && ./mvnw -B -q clean install -DskipTests && docker build -t app . && docker run -d -p 8080:8080 app
 ```
 
 Puis ouvrez le port 8080 (onglet Ports) : http://localhost:8080/WebGoat

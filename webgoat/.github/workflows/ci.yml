@@ -18,7 +18,7 @@ jobs:
           distribution: temurin
           java-version: "25"
       - name: Construire et démarrer
-        run: ./mvnw -B -q clean install -DskipTests && docker build -t app . && docker run -d -p 8080:8080 app
+        run: chmod +x mvnw && ./mvnw -B -q clean install -DskipTests && docker build -t app . && docker run -d -p 8080:8080 app
       - name: Vérifier que l'application répond
         run: |
           for i in $(seq 1 60); do
